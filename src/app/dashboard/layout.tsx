@@ -1,11 +1,16 @@
 import Link from "next/link";
 
+// Add props:
+// * Agregar variable a las props, desestructurarla en el Func Comp y asignar el valor en la funcion cn
+
+
 const links = [
     { name: "accordion", href: "accordion" },
-    { name: "alert", href: "alert" },
-    { name: "button", href: "button" },
     { name: "alert-dialog", href: "alert-dialog" },
-];
+    { name: "alert", href: "alert" },
+    { name: "badge", href: "badge" },
+    { name: "button", href: "button" },
+].sort(( a, b ) => a.name.localeCompare(b.name) )
 
 export default function DashboardLayout({
     children,
